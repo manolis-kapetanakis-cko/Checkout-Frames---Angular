@@ -1,0 +1,10 @@
+<div id="payment-form">
+  <div class="one-liner">
+    <div class="card-frame"></div>
+    <button ion-button (click)="pay()" id="pay-button" disabled>
+      PAY GBP 24.99
+    </button>
+  </div>
+  <p class="error-message"></p>
+  <p class="success-payment-message">{{ cardToken }}</p>
+</div>
