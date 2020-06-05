@@ -1,53 +1,13 @@
 <div id="payment-form">
-  <label for="card-number">Card number</label>
-  <div class="input-container card-number">
-    <div class="icon-container">
-      <img id="icon-card-number" src="assets/card-icons/card.svg"
-        alt="PAN" />
-    </div>
-    <div class="card-number-frame"></div>
-    <div class="icon-container payment-method">
-      <img id="logo-payment-method" />
-    </div>
-    <div class="icon-container">
-      <img id="icon-card-number-error" src="assets/card-icons/error.svg"
-        />
-    </div>
-  </div>
+
+  <app-card-number></app-card-number>
 
   <div class="date-and-code">
-    <div>
-      <label for="expiry-date">Expiry date</label>
-      <div class="input-container expiry-date">
-        <div class="icon-container">
-          <img id="icon-expiry-date" src="assets/card-icons/exp-date.svg"
-            alt="Expiry date" />
-        </div>
-        <div class="expiry-date-frame"></div>
-        <div class="icon-container">
-          <img id="icon-expiry-date-error"
-            src="assets/card-icons/error.svg" />
-        </div>
-      </div>
-    </div>
-
-    <div>
-      <label for="cvv">Security code</label>
-      <div class="input-container cvv">
-        <div class="icon-container">
-          <img id="icon-cvv" src="assets/card-icons/cvv.svg" alt="CVV" />
-        </div>
-        <div class="cvv-frame"></div>
-        <div class="icon-container">
-          <img id="icon-cvv-error" src="assets/card-icons/error.svg" />
-        </div>
-      </div>
-    </div>
+    <app-expiry-date></app-expiry-date>
+    <app-cvv></app-cvv>
   </div>
 
-  <button ion-button (click)="pay()" id="pay-button" disabled="">
-    PAY GBP 25.00
-  </button>
+  <app-pay-button (payButtonClicked)="pay()"></app-pay-button>
 
   <div>
     <span class="error-message error-message__card-number"></span>

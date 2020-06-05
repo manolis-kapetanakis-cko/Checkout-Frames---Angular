@@ -1,0 +1,29 @@
+#pay-button {
+  border: none;
+  border-radius: 3px;
+  color: #FFF;
+  font-weight: 500;
+  height: 40px;
+  width: 100%;
+  background-color: #13395E;
+  box-shadow: 0 1px 3px 0 rgba(19, 57, 94, 0.4);
+}
+
+#pay-button:active {
+  background-color: #0B2A49;
+  box-shadow: 0 1px 3px 0 rgba(19, 57, 94, 0.4);
+}
+
+#pay-button:hover {
+  background-color: #15406B;
+  box-shadow: 0 2px 5px 0 rgba(19, 57, 94, 0.4);
+}
+
+#pay-button:disabled {
+  background-color: #697887;
+  box-shadow: none;
+}
+
+#pay-button:not(:disabled) {
+  cursor: pointer;
+}
